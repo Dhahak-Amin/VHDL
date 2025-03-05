@@ -3,21 +3,22 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-entity Compteur8Bits is
+entity Compteur16Bits is
     Port (
         CK     : in std_logic;
         RST    : in std_logic;
         LOAD   : in std_logic;
         SENS   : in std_logic;
         EN     : in std_logic;
-        Din    : in std_logic_vector(7 downto 0);
-        Dout   : out std_logic_vector(7 downto 0)
+        Din    : in std_logic_vector(15 downto 0);
+        Dout   : out std_logic_vector(15 downto 0)
     );
-end Compteur8Bits;
+end Compteur16Bits;
 
-architecture Behavioral of Compteur8Bits is
-    signal count : std_logic_vector(7 downto 0) := (others => '0');
+architecture Behavioral of Compteur16Bits is
+    signal count : std_logic_vector(15 downto 0) := (others => '0');
 begin
+    Dout <= count;
     process (CK)
     begin
         if rising_edge(CK) then
@@ -34,8 +35,6 @@ begin
             end if;
         end if;
     end process;
-    
-    Dout <= count;
 end Behavioral;
 
 -- Testbench
@@ -44,17 +43,17 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-entity Test_Compteur8Bits is
-end Test_Compteur8Bits;
+entity Test_Compteur16Bits is
+end Test_Compteur16Bits;
 
-architecture tb of Test_Compteur8Bits is
+architecture tb of Test_Compteur16Bits is
     signal CK     : std_logic := '0';
     signal RST    : std_logic := '1';
     signal LOAD   : std_logic := '0';
     signal SENS   : std_logic := '1';
     signal EN     : std_logic := '1';
-    signal Din    : std_logic_vector(7 downto 0) := "00000000";
-    signal Dout   : std_logic_vector(7 downto 0);
+    signal Din    : std_logic_vector(15 downto 0) := (others => '0');
+    signal Dout   : std_logic_vector(15 downto 0);
 
     constant PERIOD : time := 10 ns;
 
@@ -66,8 +65,8 @@ architecture tb of Test_Compteur8Bits is
             LOAD   : in std_logic;
             SENS   : in std_logic;
             EN     : in std_logic;
-            Din    : in std_logic_vector(7 downto 0);
-            Dout   : out std_logic_vector(7 downto 0)
+            Din    : in std_logic_vector(15 downto 0);
+            Dout   : out std_logic_vector(15 downto 0)
         );
     end component;
 
@@ -88,21 +87,21 @@ begin
     -- Stimulus
     process
     begin
-        wait for 20 ns;
+        wait for 2*PERIOD;
         RST <= '0';  -- Reset
-        wait for 20 ns;
+        wait for 2*PERIOD;
         RST <= '1';  -- Fin reset
-        wait for 20 ns;
-        LOAD <= '1'; Din <= "00001010";  -- Chargement de 10
-        wait for 10 ns;
+        wait for 2*PERIOD;
+        LOAD <= '1'; Din <= "0000000000001010";  -- Chargement de 10
+        wait for 1*PERIOD;
         LOAD <= '0';
-        wait for 20 ns;
+        wait for 2*PERIOD;
         EN <= '0';  -- Activation du comptage
-        wait for 80 ns;
+        wait for 8*PERIOD;
         SENS <= '0'; -- Changement de sens (décrémentation)
-        wait for 80 ns;
+        wait for 8*PERIOD;
         EN <= '1';  -- Désactivation du comptage
-        wait for 40 ns;
+        wait for 4*PERIOD;
         report "Simulation terminée";
         wait;
     end process;
