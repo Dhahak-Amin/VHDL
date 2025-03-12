@@ -1,0 +1,138 @@
+
+*** Running vivado
+    with args -log Test_Compteur16Bits.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Test_Compteur16Bits.tcl
+
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Test_Compteur16Bits.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1278.863 ; gain = 8.023 ; free physical = 55616 ; free virtual = 60012
+Command: synth_design -top Test_Compteur16Bits -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8490
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1695.383 ; gain = 390.707 ; free physical = 54936 ; free virtual = 59332
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Test_Compteur16Bits' [/home/dhahak/Bureau/VHDL/compteur.vhdl:50]
+INFO: [Synth 8-637] synthesizing blackbox instance 'UUT' of component 'Compteur8Bits' [/home/dhahak/Bureau/VHDL/compteur.vhdl:75]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/dhahak/Bureau/VHDL/compteur.vhdl:83]
+INFO: [Common 17-14] Message 'Synth 8-312' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+ERROR: [Synth 8-403] loop limit (65536) exceeded [/home/dhahak/Bureau/VHDL/compteur.vhdl:82]
+ERROR: [Synth 8-285] failed synthesizing module 'Test_Compteur16Bits' [/home/dhahak/Bureau/VHDL/compteur.vhdl:50]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1783.352 ; gain = 478.676 ; free physical = 54825 ; free virtual = 59222
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+8 Infos, 100 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Wed Mar  5 17:31:02 2025...

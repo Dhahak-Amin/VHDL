@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Mar  5 17:12:27 2025
+# Process ID: 5344
+# Current directory: /home/dhahak/Bureau/VHDL
+# Command line: vivado
+# Log file: /home/dhahak/Bureau/VHDL/vivado.log
+# Journal file: /home/dhahak/Bureau/VHDL/vivado.jou
+# Running On: insa-11292, OS: Linux, CPU Frequency: 900.016 MHz, CPU Physical cores: 6, Host memory: 67247 MB
+#-----------------------------------------------------------
+start_gui
+xhub::refresh_catalog [xhub::get_xstores xilinx_board_store]
+set_param board.repoPaths {/home/dhahak/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store}
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:basys3:1.2]
+create_project TD1 /home/dhahak/Bureau/VHDL/TD1 -part xc7a35tcpg236-1
+set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
+set_property target_language VHDL [current_project]
+set_property simulator_language VHDL [current_project]
+add_files -norecurse /home/dhahak/Bureau/VHDL/compteur.vhdl
+update_compile_order -fileset sources_1

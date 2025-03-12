@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Mar  5 17:24:53 2025
+# Process ID: 6889
+# Current directory: /home/dhahak/Bureau/VHDL
+# Command line: vivado
+# Log file: /home/dhahak/Bureau/VHDL/vivado.log
+# Journal file: /home/dhahak/Bureau/VHDL/vivado.jou
+# Running On: insa-11292, OS: Linux, CPU Frequency: 4292.637 MHz, CPU Physical cores: 6, Host memory: 67247 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/dhahak/Bureau/VHDL/TD1/TD1.xpr
+update_compile_order -fileset sources_1
+synth_design -top Test_Compteur16Bits -part xc7a35tcpg236-1 -lint 
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+launch_simulation
+source Test_Compteur16Bits.tcl
+add_bp {/home/dhahak/Bureau/VHDL/compteur.vhdl} 82
+remove_bps -file {/home/dhahak/Bureau/VHDL/compteur.vhdl} -line 82
+close_sim
+launch_simulation
+source Test_Compteur16Bits.tcl
+close_sim
+launch_simulation
+source Test_Compteur16Bits.tcl
+add_bp {/home/dhahak/Bureau/VHDL/compteur.vhdl} 99
+close_sim
+launch_simulation
+source Test_Compteur16Bits.tcl
+synth_design -top Test_Compteur16Bits -part xc7a35tcpg236-1 -lint 
+remove_bps -file {/home/dhahak/Bureau/VHDL/compteur.vhdl} -line 99
+add_bp {/home/dhahak/Bureau/VHDL/compteur.vhdl} 99
+remove_bps -file {/home/dhahak/Bureau/VHDL/compteur.vhdl} -line 99
+close_sim
+launch_simulation
+source Test_Compteur16Bits.tcl
+close_sim
+launch_simulation
+source Test_Compteur16Bits.tcl
+count
+help
+close_sim
+launch_simulation
+source Test_Compteur16Bits.tcl
